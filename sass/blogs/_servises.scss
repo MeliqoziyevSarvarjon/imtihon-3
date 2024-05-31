@@ -1,0 +1,190 @@
+.section{
+    width: 100%;
+    .servises{
+        width: 100%;
+        height: 600px;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__box{
+            width: 40%;
+            height: 156px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        &__box__text{
+            width: 100%;
+            height: 20px;
+        }
+        &__box__text p{
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 12px;
+            text-align: center;
+            color:#777E90;
+        }
+        &__box__title{
+            width: 100%;
+            height: 60px;
+        }
+        &__box__title p{
+            font-family: DM Sans;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            letter-spacing: -0.02em;
+            text-align: center;
+        }
+        &__btn{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        &__btn button{
+            padding: 10px 25px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            background: #3B71FE;
+            color: white;
+            font-size: 19px;
+            &:hover{
+                background:rebeccapurple;
+                transition: .5s;
+            }
+        }
+        &__card__wrapper{
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+        }
+        &__card{
+            width: 100%;
+            height: 320px;
+            display: flex;
+            gap: 22px;
+        }
+        &__card__item{
+            width: 32%;
+            height: 320px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+            background:#F4F5F6;
+            border-radius: 20px;
+        }
+        &__card__logo{
+            width: 100%;
+            height: 50px;
+        }
+        &__card__logo img{
+            width: 42px;
+            height: 42px;
+        }
+        &__card__title{
+            width: 100%;
+            height: 30px;
+        }
+        &__card__title p{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+        }
+        &__card__text{
+            width: 100%;
+            height: 80px;
+        }
+        &__card__text p{
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color:#777E90;
+        }
+    }
+}
+@media (max-width:900px){
+    .servises{
+        .servises__box{
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+        .servises__box__title p{
+            font-size: 22px;
+        }
+        .servises__card__item{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .servises__box__text p{
+            font-size: 10px;
+        }
+        .servises__btn{
+            padding: 5px 15px
+        }
+        .none2{
+            display: none;
+        }
+        .servises__card{
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+        }
+        .servises__card p{
+            font-size: 9px;
+            line-height: 18px;
+        }
+    }
+}
+@media (max-width:644px){
+     .servises{
+
+        .none2{
+            display: block;
+        }
+        .servises__card__item{
+          display: flex;
+          gap: 10;
+          align-items: center;
+          width: 100%;
+          height:auto;
+        }
+        .servises__card__text p{
+            font-size: 8px;
+            line-height: 10px;
+        }
+        .servises__card__wrapper{
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 30px;
+        }
+     .servises__box{
+        width: auto;
+        height: auto;
+     }
+     .servises__card{
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+     }
+    }
+}   

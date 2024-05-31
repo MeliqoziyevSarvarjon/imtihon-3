@@ -1,0 +1,114 @@
+.social{
+    width: 100%;
+    &__item{
+        width: 90%;
+        display: flex;
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__box{
+        width: 230px;
+        height: 110px;
+        border: 1px solid #777E90;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.faq__wrapper{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.faq-container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+.faq-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.faq-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.tab {
+    background: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.tab.active {
+    background: black;
+    color: white;
+}
+.faq-content {
+    display: none;
+}
+.faq-content.active {
+    display: block;
+}
+.faq-item {
+    border-bottom: 1px solid #e1e1e1;
+    padding: 10px 0;
+}
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    display: none;
+    padding: 10px 0;
+    color: #333;
+}
+@media (max-width: 648px) {
+    .tab{
+        width: 70px;
+        height: 30px;
+    }
+    .faq-container {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tab {
+        padding: 10px;
+    }
+    h3{
+        font-size: 10px;
+    }
+}
+@media (max-width:663px){
+    .social{
+        margin-top: 330px;
+        .social{
+            height: auto;
+        }
+        .social__box{
+            width: 100%;
+            height: 109px;
+        }
+        &__item{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+    }
+}

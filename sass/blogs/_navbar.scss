@@ -1,0 +1,107 @@
+.header{
+    width: 100%;
+    .section{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        height: 88px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__logo{
+            width: 25%;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content:start;
+            gap: 40px;
+        }
+        &__logo__item{
+            width:106px;
+            height: 36px;
+        }
+        #travel{
+            width: 90px;
+            height: 38px;
+            border: none;
+            outline: none;
+            color: 
+            #777E90;
+        }
+        &__buttons{
+            width: 50%;
+            height: 40px;
+            display: flex;
+            justify-content: end;
+            gap: 24px;
+        }
+        &__collections{
+            height: 100%;
+        }
+        &__collections__item{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 34px;
+            align-items:center;
+            font-size: 15px;
+        }
+        &__list{
+            &:hover{
+                color: #3B71FE;
+                transition: .3s;
+            }
+        }
+        &__icons{
+            height: 100%;
+            display: flex;
+            gap: 24px;
+        }
+        &__btn{
+            padding: 9px 16px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            color: 
+            #23262F;
+            &:hover{
+                background:#3B71FE;
+                color: white;
+                transition: .5s;
+                cursor: pointer;
+            }
+        }
+        &__burger{
+            display: none;
+        }
+    }
+}
+@media (max-width:574px){
+    .navbar{
+        &__logo{
+            flex: 0;
+            gap: 0;
+        }
+        .navbar__logo__item{
+            width: 94px;
+            height: 32px;
+         }
+         #travel{
+            display: none;
+         }
+         &__btn{
+            display: none;
+         }
+         .navbar__burger{
+            display: block;
+         }
+}
+}
+@media (max-width:922px){
+    .navbar{
+        &__collections{
+            display: none;
+        }
+    }
+}

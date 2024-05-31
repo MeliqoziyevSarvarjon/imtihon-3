@@ -1,0 +1,189 @@
+.section{
+    width: 100%;
+    .banner{
+        width: 100%;
+        display: flex;
+        gap: 32px;
+        &__content{
+            width: 40%;
+            height: 308px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 100px;
+        }
+        &__img{
+            width: 50%;
+            height: 73%;
+        }
+        &__img img{
+            width: 100%;
+            height: 100%;
+        }
+        &__content__text{
+            width: 100%;
+            height: 26px;
+            display: flex;
+            align-items: center;
+        }
+        &__content__text p{
+            font-family: Poppins;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 12px;
+            text-align: left;
+            color: #777E90;
+
+        }
+        &__content__title{
+            width: 100%;
+            height: 115px;
+        }
+        &__content__title p{
+                font-family: DM Sans;
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 56px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                color:#23262F;
+        }
+        &__content__main__text{
+            width: 100%;
+            height: 52px;
+            display: flex;
+            align-items: center;
+        }
+        &banner__content__main__text p{
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color:#777E90;
+        }
+        &__input{
+            width:60%;
+            height: 48px;
+            border: 1px solid #E6E8EC;
+            border-radius: 30px;
+        }
+        &__input__item{
+            width: 80%;
+            height: 100%;
+            outline: none;
+            border: none;
+            border-radius: 30px;
+        }
+        &__btn{
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: none;
+            outline:none;
+            color: white;
+            background: #3B71FE;
+            &:hover{
+                background: rebeccapurple;
+                transform: scale(1);
+                transition: .3s;
+            } 
+        }
+    }
+}
+@media (max-width:892px){
+    .banner{
+        .banner__content__title p{
+            font-size: 29px;
+            line-height: 40px;
+            font-weight: 400;
+        }
+        .banner__content__main__text p{
+            font-size: 12px;
+        }
+        .banner__img{
+            width:573px;
+            height:573px;
+        }
+        .banner__input{
+            width: 100%;
+            display: flex;
+            align-items:center ;
+        }
+        .banner__btn{
+            width: 26px;
+            height: 26px;
+        }
+        .banner__input__item{
+            font-size: 8px;
+        }
+    }
+}
+@media (max-width:629px){
+    .banner{
+        display: flex;
+        flex-direction: column;
+     align-items: center;
+        .banner__content__title p{
+            font-size: 19px;
+            line-height: 25px;
+        }
+        .banner__content__main__text p{
+            font-size: 8px;
+        }
+        .banner__content{
+            display: flex;
+            gap: 22px;
+            width: 100%;
+        }
+        .banner__input{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+        }
+        .banner__input__item{
+            font-size: 6px;
+        }
+        .banner__content__text p{
+            font-size: 7px;
+        }
+        .banner__btn{
+            width: 24px;
+            height: 24px;
+        }
+        .banner__content__main__text p{
+            font-size: 7px;
+        }
+        .banner__img{
+            width: 343px;
+            height: 445px;
+        }
+    }
+}
+@media (max-width:625px){
+    .banner{
+        .banner__content__text p{
+            font-size: 20px;
+        }
+        .banner__content__title p{
+            font-size: 40px;
+            line-height: 30px;
+        }
+        .banner__content__main__text p{
+            font-size: 16px;
+
+        }
+        .banner__btn{
+            width: 32px;
+            height: 32px;
+        }
+        .banner__input{
+            width: 100%;
+            height: 20%;
+        }
+        .banner__input__item{
+            font-size: 20px;
+        }
+    }
+}
